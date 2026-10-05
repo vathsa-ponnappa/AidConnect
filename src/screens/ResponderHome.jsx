@@ -8,7 +8,7 @@ function ResponderHome({ onStartResponse }) {
   const [errorMessage, setErrorMessage] = useState('');
   const [isResponding, setIsResponding] = useState(false);
 
-  const API_BASE_URL = 'http://10.0.2.2:5000';
+  const API_BASE_URL = 'https://aidconnect-l105.onrender.com';
 
   // ================= FETCH EMERGENCY =================
 

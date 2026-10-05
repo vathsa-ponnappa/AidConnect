@@ -70,7 +70,7 @@ function ActiveRequest({ emergency, onCancel }) {
       }
 
       const response = await fetch(
-        `http://10.0.2.2:5000/api/emergencies/${emergencyId}/cancel`,
+        `https://aidconnect-l105.onrender.com/api/emergencies/${emergencyId}/cancel`,
         {
           method: 'POST',
 

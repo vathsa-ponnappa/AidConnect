@@ -3,7 +3,7 @@ import logo from '../assets/splash-logo.png';
 import { Geolocation } from '@capacitor/geolocation';
 import { useEffect, useRef, useState } from 'react';
 
-const API_BASE_URL = 'http://10.0.2.2:5000';
+const API_BASE_URL = 'https://aidconnect-l105.onrender.com';
 
 function Home({ onEmergencyCreated }) {
 

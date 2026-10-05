@@ -98,7 +98,7 @@ function Signup({ onLogin }) {
       setIsLoading(true);
 
       const response = await fetch(
-        'http://10.0.2.2:5000/api/auth/signup',
+        'https://aidconnect-l105.onrender.com/api/auth/signup',
         {
           method: 'POST',
           headers: {

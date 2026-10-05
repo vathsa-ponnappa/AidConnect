@@ -28,7 +28,7 @@ function Login({ onLoginSuccess, onSignup }) {
 
     try {
       const response = await fetch(
-        'http://10.0.2.2:5000/api/auth/login',
+        'https://aidconnect-l105.onrender.com/api/auth/login',
         {
           method: 'POST',
           headers: {
