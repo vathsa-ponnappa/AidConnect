@@ -1,0 +1,123 @@
+.splash-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      #c0464d 0%,
+      #225090 38%,
+      #071b46 72%,
+      #01081a 100%
+    );
+}
+
+/* Soft background lights */
+
+.splash-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+.splash-glow-blue {
+  width: 280px;
+  height: 280px;
+  background: rgba(11, 96, 136, 0.22);
+  top: -100px;
+  left: -100px;
+}
+
+.splash-glow-red {
+  width: 240px;
+  height: 240px;
+  background: rgba(84, 5, 13, 0.651);
+  bottom: -80px;
+  right: -80px;
+  top: -80px;
+  left: -80px;
+}
+
+/* Main content */
+
+.splash-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: splash-enter 700ms ease-out forwards;
+}
+
+/* Logo glow */
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px;
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  box-shadow:
+    0 0 40px rgba(0, 153, 255, 0.20),
+    0 0 80px rgba(255, 50, 70, 0.08);
+
+  backdrop-filter: blur(6px);
+}
+
+/* AidConnect logo */
+
+.splash-logo {
+  width: 245px;
+  height: 245px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(0 8px 18px rgba(0, 0, 0, 0.30))
+    drop-shadow(0 0 18px rgba(0, 153, 255, 0.15));
+}
+
+/* Entrance animation */
+
+@keyframes splash-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Mobile sizing */
+
+@media (max-width: 480px) {
+  .splash-logo {
+    width: 225px;
+    height: 225px;
+  }
+
+  .logo-container {
+    padding: 14px;
+  }
+}

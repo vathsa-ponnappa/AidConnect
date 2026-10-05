@@ -1,0 +1,12 @@
+{
+  "appId": "com.aidconnect.app",
+  "appName": "AidConnect",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": true,
+    "cleartext": true
+  },
+  "server": {
+    "androidScheme": "http"
+  }
+}

@@ -1,0 +1,676 @@
+/* ================================
+   ACTIVE REQUEST
+   AidConnect Theme
+================================ */
+
+.active-request-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  padding-bottom: 90px;
+
+  background: #f4f6ff;
+  color: #172033;
+
+  box-sizing: border-box;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.active-request-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 18px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e8f2;
+}
+
+.app-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  font-size: 17px;
+  font-weight: 700;
+  color: #1c2740;
+}
+
+.app-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.header-actions button {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f1f3fa;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.active-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  padding: 7px 9px;
+
+  border-radius: 20px;
+
+  background: #eaf9ef;
+  color: #18864b;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: #25a65a;
+}
+
+/* ================================
+   HELP STATUS
+================================ */
+
+.help-status-section {
+  padding: 28px 20px 22px;
+
+  text-align: center;
+}
+
+.help-illustration {
+  width: 82px;
+  height: 82px;
+
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e8ecff;
+  border: 1px solid #d7ddff;
+
+  font-size: 42px;
+
+  box-shadow: 0 8px 20px rgba(76, 91, 160, 0.08);
+}
+
+.active-request-badge {
+  display: inline-block;
+
+  margin-bottom: 9px;
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: #fff0f0;
+  color: #d73535;
+
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.help-status-section h1 {
+  margin: 0;
+
+  color: #1d2942;
+
+  font-size: 27px;
+  line-height: 1.2;
+}
+
+.help-status-section p {
+  max-width: 350px;
+
+  margin: 10px auto 0;
+
+  color: #68728a;
+
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* ================================
+   DISPATCH STATUS
+================================ */
+
+.dispatch-card {
+  margin: 0 16px 12px;
+  padding: 17px;
+
+  background: #ffffff;
+
+  border: 1px solid #e4e8f3;
+  border-radius: 16px;
+
+  box-shadow: 0 5px 18px rgba(45, 56, 100, 0.05);
+}
+
+.dispatch-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dispatch-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #4d5872;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.dispatch-icon {
+  color: #5271e8;
+  font-size: 15px;
+}
+
+.confirmed-status {
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  background: #eaf9ef;
+  color: #18864b;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.status-details {
+  display: flex;
+  align-items: center;
+
+  margin-top: 16px;
+}
+
+.status-item {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status-item small {
+  color: #8a93a7;
+  font-size: 10px;
+}
+
+.status-item strong {
+  color: #25304a;
+  font-size: 14px;
+}
+
+.status-divider {
+  width: 1px;
+  height: 32px;
+
+  margin: 0 20px;
+
+  background: #e3e6ef;
+}
+
+/* ================================
+   LOCATION INFORMATION
+================================ */
+
+.location-info-card {
+  display: flex;
+  gap: 12px;
+
+  margin: 12px 16px;
+  padding: 15px;
+
+  background: #eef3ff;
+
+  border: 1px solid #dce5ff;
+  border-radius: 15px;
+}
+
+.location-info-icon {
+  width: 34px;
+  height: 34px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  font-size: 17px;
+}
+
+.location-info-card strong {
+  color: #273453;
+
+  font-size: 13px;
+}
+
+.location-info-card p {
+  margin: 5px 0 0;
+
+  color: #66718b;
+
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+/* ================================
+   RESPONDER
+================================ */
+
+.responder-section {
+  margin: 22px 16px;
+}
+
+.section-label {
+  margin: 0 0 9px;
+
+  color: #7c869b;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+}
+
+.responder-card {
+  padding: 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e7f2;
+  border-radius: 17px;
+
+  box-shadow: 0 5px 18px rgba(45, 56, 100, 0.05);
+}
+
+.assigned-responder {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.responder-avatar {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #eef1ff;
+
+  font-size: 27px;
+}
+
+.responder-details {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  flex: 1;
+}
+
+.responder-details strong {
+  color: #25304a;
+
+  font-size: 14px;
+}
+
+.responder-details span {
+  color: #7b8599;
+
+  font-size: 11px;
+}
+
+.call-responder {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #eaf9ef;
+  color: #18864b;
+
+  font-size: 17px;
+
+  cursor: pointer;
+}
+
+.responder-meta {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 14px;
+  padding-top: 13px;
+
+  border-top: 1px solid #edf0f5;
+
+  color: #68738a;
+
+  font-size: 11px;
+}
+
+.track-map-button {
+  width: 100%;
+
+  margin-top: 13px;
+  padding: 12px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #536fe5;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 12px rgba(83, 111, 229, 0.2);
+}
+
+.track-map-button:active {
+  transform: scale(0.98);
+}
+
+/* ================================
+   EMERGENCY CONTACTS
+================================ */
+
+.contacts-section {
+  margin: 22px 16px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 8px;
+  padding: 11px 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #e6e9f1;
+  border-radius: 12px;
+}
+
+.contact-icon {
+  width: 32px;
+  height: 32px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eef1ff;
+  color: #5069d5;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.contact-card div {
+  flex: 1;
+}
+
+.contact-card strong {
+  color: #303a52;
+  font-size: 12px;
+}
+
+.contact-status {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.contact-status.notified {
+  color: #18864b;
+}
+
+.contact-status.calling {
+  color: #d58a19;
+}
+
+/* ================================
+   CANCEL
+================================ */
+
+.cancel-section {
+  margin: 25px 16px;
+
+  text-align: center;
+}
+
+.cancel-button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #e15a5a;
+  border-radius: 10px;
+
+  background: #fff5f5;
+  color: #d63c3c;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+
+  cursor: pointer;
+}
+
+.cancel-button:active {
+  transform: scale(0.98);
+}
+
+.cancel-section small {
+  display: block;
+
+  margin-top: 9px;
+
+  color: #929aab;
+
+  font-size: 9px;
+}
+
+/* ================================
+   BOTTOM NAVIGATION
+================================ */
+
+.bottom-navigation {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+
+  padding: 9px 8px calc(9px + env(safe-area-inset-bottom));
+
+  background: rgba(255, 255, 255, 0.97);
+
+  border-top: 1px solid #e3e6ef;
+
+  box-shadow: 0 -4px 15px rgba(30, 40, 75, 0.05);
+
+  z-index: 100;
+}
+
+.bottom-navigation button {
+  min-width: 70px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+
+  border: none;
+  background: transparent;
+
+  color: #8992a6;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.bottom-navigation button.nav-active {
+  color: #536fe5;
+}
+
+.nav-icon {
+  font-size: 18px;
+}
+
+/* ================================
+   PIXEL 5 / MOBILE
+================================ */
+
+@media (max-width: 390px) {
+
+  .active-request-header {
+    padding: 14px 15px;
+  }
+
+  .app-name {
+    font-size: 15px;
+  }
+
+  .app-logo {
+    width: 31px;
+    height: 31px;
+  }
+
+  .help-status-section {
+    padding-top: 22px;
+  }
+
+  .help-status-section h1 {
+    font-size: 24px;
+  }
+
+  .dispatch-card,
+  .location-info-card,
+  .responder-section,
+  .contacts-section,
+  .cancel-section {
+    margin-left: 13px;
+    margin-right: 13px;
+  }
+}
+
+.responder-waiting {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.responder-waiting-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: #eef1ff;
+
+  font-size: 22px;
+}
+
+.responder-waiting div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.responder-waiting strong {
+  color: #25304a;
+  font-size: 14px;
+}
+
+.responder-waiting span {
+  color: #7b8599;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.contact-subtext {
+  display: block;
+  margin-top: 4px;
+  color: #7b8599;
+  font-size: 10px;
+}
+
+.contacts-info {
+  margin: 8px 3px 0;
+  color: #8992a6;
+  font-size: 10px;
+  line-height: 1.4;
+}

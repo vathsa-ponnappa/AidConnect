@@ -1,0 +1,721 @@
+/* =========================================================
+   AIDCONNECT — SIGNUP SCREEN
+========================================================= */
+
+.signup-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  position: relative;
+  overflow-x: hidden;
+
+  padding: 28px 18px 35px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 10% 5%,
+      rgba(37, 99, 235, 0.10),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(239, 68, 68, 0.06),
+      transparent 30%
+    ),
+    #c2d7f4;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOWS
+========================================================= */
+
+.signup-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+}
+
+.signup-glow-blue {
+  width: 240px;
+  height: 240px;
+
+  top: -110px;
+  left: -100px;
+
+  background: rgba(37, 99, 235, 0.09);
+}
+
+.signup-glow-red {
+  width: 200px;
+  height: 200px;
+
+  right: -90px;
+  bottom: -90px;
+
+  background: rgba(239, 68, 68, 0.07);
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.signup-container {
+  width: 100%;
+  max-width: 430px;
+
+  position: relative;
+  z-index: 2;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.signup-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 2px;
+}
+
+.signup-logo {
+  width: 125px;
+  height: 125px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 6px 12px rgba(15, 23, 42, 0.12)
+    );
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.signup-heading {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.signup-heading h1 {
+  margin: 0;
+
+  color: #102a56;
+
+  font-size: 28px;
+  font-weight: 700;
+
+  letter-spacing: -0.4px;
+
+  font-family:
+    'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    Arial,
+    sans-serif;
+}
+
+.signup-heading p {
+  max-width: 320px;
+
+  margin: 8px auto 0;
+
+  color: #64748b;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  font-family:
+    'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   SIGNUP CARDS
+========================================================= */
+
+.signup-card {
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  padding: 22px 21px 21px;
+
+  margin-bottom: 16px;
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(37, 99, 235, 0.12);
+
+  background:
+    linear-gradient(
+      145deg,
+      #edf4ff 0%,
+      #f3c2c2 42%,
+      #9baef8 72%,
+      #5fb0f2 100%
+    );
+
+  box-shadow:
+    0 12px 35px rgba(15, 23, 42, 0.08),
+    0 3px 10px rgba(37, 99, 235, 0.05);
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* Top accent */
+
+.signup-card::before {
+  content: '';
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #2563eb 0%,
+      #3b82f6 55%,
+      #ef4444 100%
+    );
+
+  opacity: 0.75;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.signup-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  margin-bottom: 20px;
+}
+
+.signup-section-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.72);
+
+  font-size: 19px;
+
+  box-shadow:
+    0 4px 10px rgba(37, 99, 235, 0.08);
+}
+
+.signup-section-icon.emergency-icon {
+  background: #fff3f3;
+}
+
+.signup-section-heading h2 {
+  margin: 0;
+
+  color: #1b3763;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  font-family:
+    'Trebuchet MS',
+    'Lucida Sans Unicode',
+    Arial,
+    sans-serif;
+}
+
+.signup-section-heading p {
+  margin: 4px 0 0;
+
+  color: #66758d;
+
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.signup-card form {
+  width: 100%;
+}
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 16px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.form-group label {
+  margin-bottom: 7px;
+
+  color: #243b64;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  font-family:
+    'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    Arial,
+    sans-serif;
+}
+
+
+/* =========================================================
+   INPUT + SELECT
+========================================================= */
+
+.form-group input,
+.form-group select {
+  width: 100%;
+
+  height: 48px;
+
+  padding: 0 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #d7e0ed;
+
+  border-radius: 11px;
+
+  background: #f8faff;
+
+  color: #172b4d;
+
+  font-size: 14px;
+
+  font-family:
+    'Trebuchet MS',
+    'Lucida Sans Unicode',
+    Arial,
+    sans-serif;
+
+  outline: none;
+
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease;
+}
+
+.form-group select {
+  cursor: pointer;
+}
+
+
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
+
+.form-group input::placeholder {
+  color: #9aa9bd;
+  opacity: 1;
+}
+
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #4f83df;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+
+/* =========================================================
+   CONTACT BLOCK
+========================================================= */
+
+.contact-block {
+  padding: 16px;
+
+  margin-top: 14px;
+
+  background: rgba(255, 255, 255, 0.48);
+
+  border: 1px solid rgba(255, 255, 255, 0.75);
+
+  border-radius: 15px;
+}
+
+.contact-block-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 16px;
+
+  color: #29446f;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 0.3px;
+}
+
+.contact-number {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #536fe5;
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.contact-block .form-group {
+  margin-bottom: 13px;
+}
+
+.contact-block .form-group:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.form-error {
+  margin: 4px 0 14px;
+
+  padding: 10px 12px;
+
+  border-radius: 9px;
+
+  color: #b42318;
+
+  background: #fff1f0;
+
+  border: 1px solid rgba(239, 68, 68, 0.10);
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.form-success {
+  margin: 4px 0 14px;
+
+  padding: 10px 12px;
+
+  border-radius: 9px;
+
+  color: #16794c;
+
+  background: #ecfdf3;
+
+  border: 1px solid rgba(22, 121, 76, 0.10);
+
+  font-size: 13px;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   CREATE ACCOUNT BUTTON
+========================================================= */
+
+.create-account-button {
+  width: 100%;
+
+  height: 50px;
+
+  margin-top: 2px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #1749a8
+    );
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  font-family:
+    'Trebuchet MS',
+    'Lucida Sans Unicode',
+    Arial,
+    sans-serif;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 16px rgba(37, 99, 235, 0.20),
+    0 2px 5px rgba(239, 68, 68, 0.05);
+
+  transition:
+    transform 150ms ease,
+    box-shadow 150ms ease,
+    opacity 150ms ease;
+}
+
+.create-account-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 9px 20px rgba(37, 99, 235, 0.25),
+    0 3px 7px rgba(239, 68, 68, 0.06);
+}
+
+.create-account-button:active {
+  transform: translateY(0);
+
+  box-shadow:
+    0 5px 12px rgba(37, 99, 235, 0.18);
+}
+
+.create-account-button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+
+  box-shadow:
+    0 5px 12px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================================
+   LOGIN LINK
+========================================================= */
+
+.login-link {
+  margin: 19px 0 0;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  font-family:
+    'Trebuchet MS',
+    'Lucida Sans Unicode',
+    'Lucida Grande',
+    Arial,
+    sans-serif;
+}
+
+.login-link span {
+  color: #2563eb;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: color 150ms ease;
+}
+
+.login-link span:hover {
+  color: #1749a8;
+
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .signup-screen {
+    padding: 20px 15px 28px;
+  }
+
+  .signup-logo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .signup-heading {
+    margin-bottom: 18px;
+  }
+
+  .signup-heading h1 {
+    font-size: 25px;
+  }
+
+  .signup-heading p {
+    font-size: 13px;
+  }
+
+  .signup-card {
+    padding: 20px 17px 19px;
+
+    border-radius: 20px;
+  }
+
+  .signup-section-heading {
+    margin-bottom: 17px;
+  }
+
+  .signup-section-heading h2 {
+    font-size: 16px;
+  }
+
+  .signup-section-heading p {
+    font-size: 10px;
+  }
+
+  .contact-block {
+    padding: 14px;
+  }
+
+  .form-group {
+    margin-bottom: 14px;
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 46px;
+
+    font-size: 14px;
+  }
+
+  .create-account-button {
+    height: 48px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-height: 700px) and (max-width: 480px) {
+
+  .signup-screen {
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .signup-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .signup-heading {
+    margin-bottom: 13px;
+  }
+
+  .signup-heading h1 {
+    font-size: 23px;
+  }
+
+  .signup-heading p {
+    margin-top: 5px;
+  }
+
+  .signup-card {
+    padding-top: 18px;
+  }
+
+  .form-group {
+    margin-bottom: 11px;
+  }
+
+  .form-group label {
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 43px;
+  }
+}

@@ -1,0 +1,824 @@
+/* =========================================================
+   RESPONDER HOME
+   ========================================================= */
+
+.responder-home-screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  width: 100%;
+  padding-bottom: 85px;
+  background: #eef4ff;
+  color: #172b55;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.responder-header {
+  width: 100%;
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid #dce6f7;
+  box-sizing: border-box;
+}
+
+.responder-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.responder-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.responder-brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.responder-brand-text strong {
+  font-size: 19px;
+  font-weight: 800;
+  color: #173466;
+  line-height: 1.1;
+}
+
+.responder-brand-text span {
+  font-size: 10px;
+  color: #7182a3;
+  font-weight: 500;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-actions button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 13px;
+  background: #f7faff;
+  box-shadow: 0 4px 12px rgba(35, 67, 120, 0.06);
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.available-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 9px;
+  border-radius: 9px;
+  background: #e9f9ef;
+  color: #15803d;
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   ALERT BANNER
+   ========================================================= */
+
+.alert-banner {
+  width: 100%;
+  padding: 17px 20px;
+  background: linear-gradient(
+    135deg,
+    #dc2626,
+    #ef4444
+  );
+  color: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 8px 22px rgba(220, 38, 38, 0.16);
+}
+
+.alert-title-row {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.new-alert-label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.alert-banner h1 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.live-badge {
+  padding: 7px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 9px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.responder-content {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 18px 18px 25px;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   META
+   ========================================================= */
+
+.request-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.severity-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #dc2626;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.request-id {
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 9px;
+  font-weight: 700;
+  color: #8190aa;
+}
+
+/* =========================================================
+   EMERGENCY CARD
+   ========================================================= */
+
+.emergency-card {
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid #dce6f7;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 9px 28px rgba(35, 67, 120, 0.08);
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 17px 16px 14px;
+}
+
+.emergency-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  background: #fff0f0;
+  font-size: 21px;
+}
+
+.card-title div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.card-title strong {
+  font-size: 16px;
+  font-weight: 800;
+  color: #183567;
+}
+
+.card-title small {
+  font-size: 10px;
+  color: #8190aa;
+}
+
+/* =========================================================
+   EMERGENCY SUMMARY
+   ========================================================= */
+
+.ai-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 14px 10px;
+  padding: 12px;
+  background: #f2f6fd;
+  border: 1px solid #e6edf8;
+  border-radius: 11px;
+}
+
+.ai-icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #e1ebff;
+  color: #315fa8;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.ai-summary p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #687895;
+}
+
+.ai-summary strong {
+  color: #31486f;
+  font-size: 11px;
+}
+
+/* =========================================================
+   DETAILS
+   ========================================================= */
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border-top: 1px solid #edf2f9;
+}
+
+.detail-icon {
+  width: 29px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #f3f7fd;
+  font-size: 13px;
+}
+
+.detail-row div {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.detail-row small {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #9aa7bb;
+}
+
+.detail-row strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 650;
+  color: #405477;
+}
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+.location-section {
+  margin-top: 18px;
+}
+
+.location-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.location-heading > span {
+  font-size: 9px;
+  font-weight: 800;
+  color: #73829e;
+  letter-spacing: 0.4px;
+}
+
+.location-heading button {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 8px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* =========================================================
+   MAP PREVIEW
+   ========================================================= */
+
+.map-preview {
+  position: relative;
+  height: 175px;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid #d6e1f0;
+
+  background:
+    linear-gradient(
+      25deg,
+      transparent 46%,
+      #cbd5e1 47%,
+      #cbd5e1 49%,
+      transparent 50%
+    ),
+    linear-gradient(
+      150deg,
+      transparent 45%,
+      #dce4ee 46%,
+      #dce4ee 49%,
+      transparent 50%
+    ),
+    #eaf0f5;
+}
+
+.map-road {
+  position: absolute;
+  background: #ffffff;
+  opacity: 0.9;
+}
+
+.road-one {
+  width: 130%;
+  height: 8px;
+  top: 42%;
+  left: -15%;
+  transform: rotate(-18deg);
+}
+
+.road-two {
+  width: 130%;
+  height: 5px;
+  top: 65%;
+  left: -10%;
+  transform: rotate(20deg);
+}
+
+.road-three {
+  width: 6px;
+  height: 130%;
+  left: 48%;
+  top: -15%;
+  transform: rotate(18deg);
+}
+
+/* MAP MARKER */
+
+.map-marker {
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.17);
+  box-shadow:
+    0 0 0 10px rgba(239, 68, 68, 0.06);
+}
+
+.map-marker span {
+  font-size: 28px;
+}
+
+.map-label {
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  padding: 6px 9px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 7px;
+  color: #334155;
+  font-size: 8px;
+  font-weight: 800;
+  white-space: nowrap;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.coordinates {
+  margin-top: 6px;
+  text-align: right;
+  font-size: 8px;
+  color: #97a4b8;
+}
+
+/* =========================================================
+   ACTION BUTTONS
+   ========================================================= */
+
+.request-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 19px;
+}
+
+.request-actions button {
+  height: 52px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+  transition:
+    transform 0.15s ease,
+    background 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.request-actions button:active {
+  transform: scale(0.97);
+}
+
+.request-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* DECLINE = RED */
+
+.decline-button {
+  flex: 1;
+  border: 1px solid #fca5a5;
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+.decline-button:hover {
+  background: #fee2e2;
+}
+
+.decline-button:active {
+  background: #fecaca;
+}
+
+/* ACCEPT = GREEN */
+
+.accept-button {
+  flex: 1;
+  border: 1px solid #16a34a;
+  background: #16a34a;
+  color: #ffffff;
+  box-shadow: 0 6px 15px rgba(22, 163, 74, 0.18);
+}
+
+.accept-button:hover {
+  background: #15803d;
+}
+
+.accept-button:active {
+  background: #166534;
+}
+
+.request-actions button span {
+  margin-right: 7px;
+  font-size: 13px;
+}
+
+.request-disclaimer {
+  margin: 10px auto 0;
+  max-width: 400px;
+  text-align: center;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #94a3b8;
+}
+
+/* =========================================================
+   BOTTOM NAVIGATION
+   ========================================================= */
+
+.responder-bottom-navigation {
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.97);
+  border-top: 1px solid #dce6f7;
+  box-shadow: 0 -5px 18px rgba(35, 67, 120, 0.06);
+}
+
+.responder-bottom-navigation button {
+  min-width: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  border: none;
+  background: transparent;
+  color: #9aa8bd;
+  cursor: pointer;
+}
+
+.responder-bottom-navigation button span {
+  font-size: 17px;
+}
+
+.responder-bottom-navigation button small {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.responder-bottom-navigation button.active {
+  color: #28569a;
+}
+
+/* =========================================================
+   LOADING / ERROR / EMPTY / CONFIRMATION
+   ========================================================= */
+
+.response-state-card {
+  width: calc(100% - 36px);
+  max-width: 450px;
+  margin: 60px auto 30px;
+  padding: 42px 24px;
+  box-sizing: border-box;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #dce6f7;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(35, 67, 120, 0.08);
+}
+
+.response-state-card h1 {
+  margin: 0;
+  color: #173466;
+  font-size: 25px;
+}
+
+.response-state-card > p {
+  margin: 12px auto 24px;
+  max-width: 340px;
+  color: #71809b;
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+.state-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.confirmation-icon {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.error-state-icon {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.declined-icon {
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+.loading-state-icon {
+  background: #e8f0ff;
+}
+
+.state-spinner {
+  width: 28px;
+  height: 28px;
+  border: 4px solid #cbdcf8;
+  border-top-color: #315fa8;
+  border-radius: 50%;
+  animation: responder-spin 0.9s linear infinite;
+}
+
+@keyframes responder-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================================
+   AVAILABLE MESSAGE
+   ========================================================= */
+
+.available-message {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 13px;
+  border-radius: 10px;
+  background: #ecfdf3;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.available-message span {
+  font-size: 12px;
+}
+
+/* =========================================================
+   RETRY
+   ========================================================= */
+
+.state-retry-button {
+  min-height: 46px;
+  padding: 0 25px;
+  border: none;
+  border-radius: 10px;
+  background: #28569a;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* =========================================================
+   ACCEPTED / DECLINED
+   ========================================================= */
+
+.accepted-state-card {
+  margin-top: 70px;
+}
+
+.declined-state-card {
+  margin-top: 70px;
+}
+
+.confirmation-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 17px;
+  border: 1px solid #dce6f7;
+  border-radius: 13px;
+  background: #f7faff;
+  text-align: left;
+}
+
+.confirmation-card strong {
+  color: #173466;
+  font-size: 16px;
+}
+
+.confirmation-card span {
+  color: #71809b;
+  font-size: 11px;
+  word-break: break-word;
+}
+
+.continue-response-button {
+  width: 100%;
+  margin-top: 20px;
+  min-height: 50px;
+  border: none;
+  border-radius: 11px;
+  background: #28569a;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+  box-shadow: 0 6px 15px rgba(40, 86, 154, 0.18);
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .responder-header {
+    min-height: 72px;
+    padding: 10px 14px;
+  }
+
+  .responder-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .responder-brand-text strong {
+    font-size: 17px;
+  }
+
+  .responder-brand-text span {
+    font-size: 9px;
+  }
+
+  .available-badge {
+    padding: 6px 7px;
+    font-size: 8px;
+  }
+
+  .header-actions {
+    gap: 5px;
+  }
+
+  .header-actions button {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+
+  .alert-banner {
+    padding: 15px 16px;
+  }
+
+  .alert-banner h1 {
+    font-size: 16px;
+  }
+
+  .live-badge {
+    font-size: 8px;
+    padding: 6px 7px;
+  }
+
+  .responder-content {
+    padding: 16px 14px 25px;
+  }
+
+  .emergency-card {
+    border-radius: 16px;
+  }
+
+  .map-preview {
+    height: 165px;
+  }
+
+  .request-actions button {
+    height: 50px;
+  }
+
+  .response-state-card {
+    width: calc(100% - 28px);
+    margin-top: 35px;
+    padding: 35px 18px;
+  }
+}

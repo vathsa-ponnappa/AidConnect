@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AidConnect</string>
+    <string name="title_activity_main">AidConnect</string>
+    <string name="package_name">com.aidconnect.app</string>
+    <string name="custom_url_scheme">com.aidconnect.app</string>
+</resources>
