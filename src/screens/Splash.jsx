@@ -1,4 +1,4 @@
-import '../styles/Splash.css';
+import '../Styles/Splash.css';
 import logo from '../assets/splash-logo.png';
 
 function Splash() {

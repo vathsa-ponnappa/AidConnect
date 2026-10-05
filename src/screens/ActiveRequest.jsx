@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/ActiveRequest.css';
+import '../Styles/ActiveRequest.css';
 import logo from '../assets/splash-logo.png';
 
 function ActiveRequest({ emergency, onCancel }) {
